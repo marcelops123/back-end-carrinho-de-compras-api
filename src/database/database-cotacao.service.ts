@@ -8,7 +8,7 @@ export class DatabaseCotacaoService {
 	constructor(configService: ConfigService) {
 		const host = configService.get('databaseTeste.host');
 		if (!host) {
-			throw new Error('VARIÁVEL DE AMBIENTE DATABASE_HOST_TESTE NÃO FOI CONFIGURADA')
+			throw new Error('VARIÁVEL DE AMBIENTE DATABASE_HOST_TESTE NÃO FOI CONFIGURADA!')
 		}
 		const port = configService.get('databaseTeste.port');
 		if (!port) {
