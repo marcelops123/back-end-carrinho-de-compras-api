@@ -13,7 +13,7 @@ export class SiteSuccessDatabaseService {
 		const host = configService.get('siteSuccess.host')
 		if (!host)
 			throw new Error(
-				'VARIAVEL DE AMBIENTE SITE_SUCCESS_DB_HOST NÃO CONFIGURADA!'
+				'VARIAVEL DE AMBIENTE SITE_SUCCESS_DB_HOST NÃO CONFIGURADA!.'
 			)
 		const port = configService.get('siteSuccess.port')
 		if (!port)
